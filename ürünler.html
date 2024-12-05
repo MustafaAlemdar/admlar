@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alemdar Oto Radyatör - Ürünler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS DOSYASI/index.css">
+    <style>
+        .dropdown-menu {
+            width: 200px; /* Menü kutucuklarının genişliğini ayarlayın */
+        }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1; /* İçerik container'ının esneklik ayarlarını yapalım */
+            margin-bottom: 0; 
+            padding-bottom: 0;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+        .siyah-cizgi {
+            border-top: 2px solid black; /* Siyah çizgi */
+        }
+        .alt-cizgi {
+            border-bottom: 2px solid black; /* Altında siyah çizgi */
+        }
+        .bosluk {
+            margin-bottom: 5px; /* Siyah çizgi ile menü arasında çeyrek br boşluk */
+        }
+        .menuler-arasi-bosluk {
+            margin-top: 5px; /* Menü ile siyah çizgi arasında çeyrek br boşluk */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-bordo text-white text-center p-5 alt-cizgi siyah-cizgi">
+        <div class="logo-konteyner">
+            <img src="images/logo.png" alt="Logo" style="width: 40px; height: 40px;">
+            <h1>Alemdar Oto Radyatör</h1>
+        </div>
+        <p>Güven Veren Teknoloji</p>
+    </header>
+
+    <div class="desktop-menu-konteyner d-none d-md-flex justify-content-end menuler-arasi-bosluk">
+        <div class="menu-box mx-2">
+            <a class="menu-btn" href="index1.html">Anasayfa</a>
+        </div>
+        <div class="menu-box mx-2">
+            <a class="menu-btn" href="ürünler.html">Ürünler</a>
+        </div>
+        <div class="menu-box mx-2">
+            <a class="menu-btn" href="iletişim.html">İletişim</a>
+        </div>
+    </div>
+
+    <!-- Mobil Menü -->
+    <div class="dropdown d-md-none menuler-arasi-bosluk">
+        <button class="btn btn-menu dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menü
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="index1.html">Anasayfa</a>
+            <a class="dropdown-item" href="ürünler.html">Ürünler</a>
+            <a class="dropdown-item" href="iletişim.html">İletişim</a>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="display-4">Ürünlerimiz</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/Tır.jpg" class="card-img-top" alt="Radyatör 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Radyatör 1</h5>
+                        <p class="card-text">Bu radyatör, üstün ısıtma performansı ile öne çıkar.</p>
+                        <a href="#" class="btn btn-ana">Detaylı İncele</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/kontur-turizm.jpg" class="card-img-top" alt="Radyatör 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Radyatör 2</h5>
+                        <p class="card-text">Bu radyatör, enerji verimliliği sağlar.</p>
+                        <a href="#" class="btn btn-ana">Detaylı İncele</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/R.jpeg" class="card-img-top" alt="Radyatör 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Radyatör 3</h5>
+                        <p class="card-text">Bu radyatör, modern tasarımı ile dikkat çeker.</p>
+                        <a href="#" class="btn btn-ana">Detaylı İncele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-bordo text-white p-3 text-center mt-5 siyah-cizgi">
+        <div class="footer-linkleri">
+            <a href="index1.html">Anasayfa</a> | 
+            <a href="ürünler.html">Ürünlerimiz</a> | 
+            <a href="#">Hakkımızda</a> | 
+            <a href="iletişim.html">İletişim</a>
+        </div>
+        <p class="mt-2">Tüm Hakları Saklıdır &copy; 2024 Alemdar Oto Radyatör</p>
+    </footer>
+
+    <!-- JavaScript Bağlantıları -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#dropdownMenuButton').on('click', function() {
+                $('.dropdown-menu').toggle();
+            });
+        });
+    </script>
+</body>
+</html>
