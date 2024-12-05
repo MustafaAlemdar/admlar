@@ -1,0 +1,149 @@
+body {
+    background-color: #ffffff; /* Beyaz Arka Plan */
+}
+
+/* Turuncu butonlar için stil */
+.btn-ana {
+    background-color: #FF4500; /* Koyu Turuncu Renk */
+    border-color: #FF4500; /* Koyu Turuncu Renk */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ana:hover {
+    background-color: #FFD700; /* Altın Sarısı */
+    border-color: #FFD700; /* Altın Sarısı */
+    color: black;
+}
+
+/* Menü butonları için lacivert renk ve hover */
+.btn-menu {
+    background-color: #000080; /* Lacivert Renk */
+    border-color: #000080; /* Lacivert Renk */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-menu:hover {
+    background-color: #FFD700; /* Altın Sarısı */
+    border-color: #FFD700; /* Altın Sarısı */
+    color: black;
+}
+
+.bg-bordo {
+    background-color: #800000; /* Bordo Renk */
+}
+
+.siyah-cizgi {
+    border-top: 2px solid black; /* Siyah Çizgi */
+}
+
+.footer-linkleri a {
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-linkleri a:hover {
+    color: #FFD700; /* Altın Sarısı */
+}
+
+.ozel-navbar {
+    background-color: #800000; /* Bordo Renk */
+    color: white;
+}
+
+.ozel-navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.ozel-navbar .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Altın Sarısı */
+}
+
+.menu-konteyner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-box {
+    background-color:  #000080; /* Bordo Renk */
+    border: 2px solid #000080; /* Lacivert Renk */
+    border-radius: 10px; /* Köşe yuvarlama */
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-box a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu-box a:hover {
+    color: #FFD700; /* Altın Sarısı */
+}
+
+.logo-konteyner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-konteyner img {
+    margin-right: 15px;
+}
+
+.ozel-jumbotron {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    background-color: rgba(187, 187, 187, 0.205); /* Şeffaflık için arka plan rengi */
+    opacity: 0.9; /* Şeffaflık seviyesi */
+}
+
+/* Mobil (319px - 480px) */
+@media (max-width: 480px) {
+    .dropdown {
+        display: block;
+        text-align: right;
+    }
+    .menu-konteyner {
+        display: none;
+    }
+}
+
+/* Tablet/iPad (481px - 1200px) */
+@media (min-width: 481px) and (max-width: 1200px) {
+    .dropdown {
+        display: block;
+        text-align: right;
+    }
+    .menu-konteyner {
+        display: none;
+    }
+}
+
+/* Dizüstü Bilgisayar (1201px - 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .desktop-menu-konteyner {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .ozel-jumbotron {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* Masaüstü (1601px ve üzeri) */
+@media (min-width: 1601px) {
+    .desktop-menu-konteyner {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .ozel-jumbotron {
+        width: 100%;
+        margin-right: 0;
+    }
+}
